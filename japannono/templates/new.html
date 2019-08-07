@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form action="/japannono/create/" class="m-5">
+    <div class="form-group">
+        <label for="kname">한글제품명</label>
+        <input type="text" class="form-control" id="kname" name="kname" placehoder="유니클로">
+    </div>
+    <div class="form-group">
+        <label for="ename">영문제품명</label>
+        <input type="text" class="form-control" id="ename" name="ename" placehoder="uniqlo">
+    </div>
+    <div class="form-group">
+        <label for="category">카테고리</label>
+        <input type="text" class="form-control" id="category" name="category" placehoder="패션">
+    </div>
+    <div class="form-group">
+        <label for="country">국적</label>
+        <input type="text" class="form-control" id="country" name="country" placehoder="일본">
+    </div>
+    <div class="form-group">
+        <label for="second">대체상품</label>
+        <input type="text" class="form-control" id="second" name="second" placehoder="스파오,탑텐,지오다노">
+    </div>
+    <div class="form-group">
+        <label for="tag">태그</label>
+        <input type="text" class="form-control" id="tag" name="tag" placehoder="#의류, #쇼핑">
+    </div>
+    <button type="submit" class="btn btn-primary">추가하기</button>
+</form>
+{% endblock %}

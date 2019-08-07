@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<a class="btn btn-primary btn-lg m-3" href="/japannono/new/" role="button">항목추가</a>
+<div class="">
+    {% for nono in nonos %}
+    <div class="card d-inline-block" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="사진">
+        <div class="card-body">
+            <h5 class="card-title">{{nono.kname}}</h5>
+            <p class="card-text">대체상품</p>
+            <a href="#" class="btn btn-primary">{{nono.second}}</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
